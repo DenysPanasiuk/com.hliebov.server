@@ -7,6 +7,9 @@ import com.hliebov.server.orders.service.OrdersService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 /**
  * @author Denys Panasiuk, denys.panasiuk@media-sol.com, MEDIA SOLUTIONS
  */
@@ -41,6 +44,11 @@ public class OrdersServiceImpl implements OrdersService {
     @Override
     public void deleteOrder(String orderId) {
         ordersRepository.deleteById(orderId);
+    }
+
+    @Override
+    public List<OrderDTO> getAllOrders() {
+        return ordersRepository.findAll().stream().map(OrderDTO::of).collect(Collectors.toList());
     }
 
 }

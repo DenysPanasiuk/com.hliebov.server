@@ -3,7 +3,6 @@ package com.hliebov.server.orders.dto;
 import com.hliebov.server.common.model.Money;
 import com.hliebov.server.orders.model.Order;
 import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.Data;
 import lombok.experimental.Accessors;
@@ -26,7 +25,6 @@ public class OrderDTO {
 
     private String description;
 
-    @NotNull
     private Money price;
 
     @NotEmpty

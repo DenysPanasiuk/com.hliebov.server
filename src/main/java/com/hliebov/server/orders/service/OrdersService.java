@@ -6,6 +6,8 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.validation.annotation.Validated;
 
+import java.util.List;
+
 /**
  * @author Denys Panasiuk, denys.panasiuk@media-sol.com, MEDIA SOLUTIONS
  */
@@ -24,4 +26,7 @@ public interface OrdersService {
 
     void deleteOrder(@NotEmpty String orderId);
 
+    @NotNull
+    @Valid
+    List<OrderDTO> getAllOrders();
 }
