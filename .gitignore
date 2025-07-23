@@ -1,0 +1,48 @@
+target/
+backup/
+!.mvn/wrapper/maven-wrapper.jar
+src/main/asciidoc/**/cheatsheet*
+src/main/bundles/dev.bundle
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### OTHER FILES ###
+.DS_Store
+rebel.xml
+
+/node_modules/
+/webpack.config.js
+/webpack.generated.js
+/pnpm-lock.yaml
+/pnpmfile.js
+package.json
+/package-lock.json
+
+application-dev.yml
+/frontend/generated/
+/vite.generated.ts
+/.npmrc
+/src/main/frontend/generated
+
+/src/bundles/dev.bundle
+
+*.groovy
