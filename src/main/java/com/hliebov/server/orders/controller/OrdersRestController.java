@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.*;
 /**
  * @author Denys Panasiuk, denys.panasiuk@media-sol.com, MEDIA SOLUTIONS
  */
+@RestController
 @RequiredArgsConstructor
-@RestController(value = "api/v1/orders")
+@RequestMapping("/api/v1/orders")
 public class OrdersRestController {
 
     private final OrdersService ordersService;

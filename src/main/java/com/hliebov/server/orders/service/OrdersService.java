@@ -1,6 +1,9 @@
 package com.hliebov.server.orders.service;
 
 import com.hliebov.server.orders.dto.OrderDTO;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import org.springframework.validation.annotation.Validated;
 
 /**
@@ -9,12 +12,16 @@ import org.springframework.validation.annotation.Validated;
 @Validated
 public interface OrdersService {
 
-    String createOrder(OrderDTO orderDTO);
+    @NotEmpty String createOrder(@Valid OrderDTO orderDTO);
 
-    OrderDTO getOrder(String orderId);
+    @NotNull
+    @Valid
+    OrderDTO getOrder(@NotEmpty String orderId);
 
-    OrderDTO updateOrder(OrderDTO orderDTO);
+    @NotNull
+    @Valid
+    OrderDTO updateOrder(@Valid OrderDTO orderDTO);
 
-    void deleteOrder(String orderId);
+    void deleteOrder(@NotEmpty String orderId);
 
 }
