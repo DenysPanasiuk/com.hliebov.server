@@ -1,4 +1,4 @@
-package com.hliebov.service;
+package com.hliebov.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.hliebov</groupId>
-	<artifactId>service</artifactId>
+	<artifactId>server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>service</name>
-	<description>Service of the restaurant project</description>
+	<name>server</name>
+	<description>Server of the restaurant project</description>
 	<url/>
 	<licenses>
 		<license/>

@@ -1,4 +1,4 @@
-package com.hliebov.service;
+package com.hliebov.server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
